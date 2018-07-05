@@ -16,26 +16,24 @@ There's a little driving school under the sea. Instructors are testing students 
 * an `instructor` has_many `students` through `boating_tests`
 
 ### Already Completed
-* rails new bikini_bottom
-* rails g model Student name:string
-<!-- * added 'faker' gem to Gemfile -->
-* rails g model Instructor name:string
-* rails g model BoatingTest student_id:integer instructor_id:integer completed:boolean test_name:string
-* created seed data
+* `rails new bikini_bottom`
+* `rails g model Student name:string`
+* `rails g model Instructor name:string`
 
 ### Setup
-* fork and clone the repo
-* bundle install
-* run rake db:migrate
+* Fork and clone the repo
+* `bundle install`
+* run `rake db:migrate` in the terminal
 
 ##### Deliverables
-* create the associations between the models, then run rake db:seed and check that Instructors and Students have been made in the rails console
-* as a user, when I go to the instructors index page, I should see a list of instructors names with links to their show pages
-* when a user navigates to the instructors show page, the page should display the instructors name and all of the students that they have tested
-* a user can go to a students show page and the page displays the students name and a list of the students boating tests' name and status
-* a user can create a new boating test by inputting the test name, inputting a student's name, and selecting the instructor
-* a user can edit a boating tests name and mark the test as complete
+* Create the associations between the models, then run `rake db:seed` and check that Instructors and Students have been made in the rails console
+* As a user, when I go to the instructors index page, I should see a list of instructors names with links to their show pages
+* When a user navigates to the instructors show page, the page should display the instructors name and all of the students that they have tested
+* A user can go to a students show page and the page displays the students name and a list of the students boating tests' name and status
+* A user can create a new boating test by inputting the test name, inputting a student's name, and selecting the instructor
+* A user can edit a boating tests name and mark the test as complete
 
+##### Validations
 * a student's name should be unique
 * an instructors's name should be unique
 * boating test name, instructor, and student must be present

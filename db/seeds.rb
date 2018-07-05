@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Instructor.destroy_all
 Student.destroy_all
-BoatingTest.destroy_all
 
 Instructor.create(name: "Mrs. Puff")
 Instructor.create(name: "Mr. Krabs")
